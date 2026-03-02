@@ -250,7 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <li>
     <div class="withPic_img">
     <img
-      src="./images/review_detail22.webp"
+      src="./images/testImg.png"
       alt="상세리뷰 이미지22"
     />
     </div>
