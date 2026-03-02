@@ -1,0 +1,385 @@
+/************ Header **************/
+.header {
+  width: 1070px;
+  height: 30px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.header ul {
+  float: right;
+}
+.header ul li {
+  float: left;
+  padding: 10px;
+  color: #9c9c9c;
+  font-size: 13px;
+}
+
+/************ Logo **************/
+.logo_box {
+  width: 1070px;
+  margin: 20px auto;
+}
+.logo_inside {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.animals {
+  width: 260px;
+  height: 48px;
+  border: 1px solid #ff7f00;
+  border-radius: 50px;
+  display: flex;
+}
+.animals .dog_btn,
+.animals .cat_btn {
+  width: 130px;
+  height: 48px;
+  box-sizing: border-box;
+  line-height: 48px;
+}
+.animals .dog_btn .dog_img,
+.animals .cat_btn .cat_img {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  float: left;
+  padding: 0 15px;
+}
+.animals .dog_btn p,
+.animals .cat_btn p {
+  font-weight: 500;
+  font-size: 20px;
+}
+.animals .dog_btn {
+  border-right: 1px solid #ff7f00;
+}
+.dog_btn.on {
+  background-color: #ffe397;
+  border-radius: 30px 0 0 30px;
+}
+.animals .cat_btn:hover {
+  background-color: #ffe397;
+  border-radius: 0 30px 30px 0;
+}
+
+.logo {
+  width: 180px;
+  height: 122px;
+}
+
+.search {
+  width: 330px;
+  display: flex;
+  justify-content: end;
+}
+.search_box {
+  width: 260px;
+  position: relative;
+}
+input[type="text"] {
+  width: 260px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid #ff7f00;
+  border-radius: 50px;
+}
+.search_img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+
+.cart_box {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  transform: scaleX(-1);
+}
+.cart_box .cart_img {
+  position: relative;
+}
+.cart_img::after {
+  content: "0";
+  width: 15px;
+  height: 15px;
+  display: block;
+  text-align: center;
+  line-height: 15px;
+  color: white;
+  background-color: #ff7f00;
+  border-radius: 50%;
+  font-size: 11px;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+
+/************ gnb **************/
+.gnb_outer {
+  height: 55px;
+  line-height: 55px;
+  border: 1px solid #ff7f00;
+}
+.gnb {
+  width: 1070px;
+  margin: 0 auto;
+}
+
+.gnb ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 500;
+}
+.gnb li {
+  width: 140px;
+  text-align: center;
+}
+.gnb li:hover,
+.burger_box:hover {
+  font-weight: bold;
+  color: #ff7f00;
+}
+.allMenu_box {
+  position: relative;
+}
+.burger {
+  width: 30px;
+  height: 30px;
+  padding-top: 15px;
+  float: left;
+}
+.burger div {
+  width: 30px;
+  height: 2px;
+  background-color: black;
+  margin-top: 5px;
+  transition: all 0.1s ease-in;
+}
+.allMenu_box:hover .burger > div {
+  background-color: #ff7f00;
+}
+.allMenu_box:hover .line01 {
+  height: 3px;
+  transform: translateX(-2px) translateY(2px) rotate(40deg);
+  background-color: rgb(255, 104, 44);
+  margin-top: 10px;
+}
+.allMenu_box:hover .line03 {
+  height: 3px;
+  transform: translateX(-3px) translateY(-5px) rotate(-40deg);
+  background-color: rgb(255, 104, 44);
+}
+.allMenu_box:hover .burger div:nth-child(2) {
+  display: none;
+}
+
+.dropMenu_box {
+  width: 940px;
+  height: 416px;
+  border: 1px solid #ff7f00;
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  overflow: hidden;
+  display: none;
+  z-index: 10;
+}
+.dropMenu_box .dog_menu,
+.dropMenu_box .cat_menu {
+  width: 180px;
+  height: 210px;
+  line-height: 30px;
+  border: 1px solid #ff7f00;
+  text-align: center;
+  display: block;
+  padding-top: 50px;
+  box-sizing: border-box;
+}
+.dropMenu_box .dog_icon,
+.dropMenu_box .cat_icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+.dropMenu_box i {
+  font-size: 45px;
+}
+.dog_name,
+.cat_name {
+  padding-top: 10px;
+}
+
+.left,
+.right {
+  float: left;
+}
+.right {
+  float: right;
+}
+
+.kinds_menu {
+  width: 760px;
+  height: 416px;
+  display: flex;
+}
+.kinds_menu ul {
+  padding: 20px 60px;
+  font-size: 18px;
+  flex-direction: column;
+}
+.kinds_menu ul:last-child {
+  align-self: flex-start;
+}
+.kinds_menu li {
+  text-align: left;
+}
+.kinds_menu .bone_icon {
+  width: 15px;
+  height: 15px;
+  display: inline;
+  padding-right: 5px;
+}
+.kinds_menu .bone_icon i {
+  font-size: 10px;
+  transform: rotate(130deg);
+}
+
+.dog_menu:hover,
+.cat_menu:hover {
+  background-color: #fed499;
+}
+
+/************ top_menu **************/
+.top_menu {
+  width: 50px; 
+  height: 300px;
+  position: fixed;
+  right: 0;
+  top: 30%;
+}
+.top_menu ul {
+  overflow: hidden;
+}
+.top_menu li {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: white;
+  border: 1px solid #ff7f00;
+  border-bottom: none;
+  transition: all .1s ease-in;
+}
+
+.top_menu li:hover {
+ color: white;
+  background-color: #FF7F00;
+}
+.top_menu li .icon_imgBox {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  padding-left: 5px;
+  position: relative;
+}
+.fa-certificate::after {
+  content: 'new';
+  font-size: 8px;
+  color: #9C9C9C;
+  position: absolute;
+  left: 14px;
+  top: 22px;
+}
+.top_menu .upMenu,
+.top_menu .downMenu {
+  color: white;
+  background-color: #ff7f00;
+  transition: all 1s ease-in;
+}
+.top_menu .downMenu i,
+.top_menu .upMenu i{
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+}
+.top_menu .upMenu i {
+  margin-top: 10px;
+}
+.top_menu .downMenu i {
+  margin-top: -10px;
+}
+.upMenu i:hover {
+  transform: translate(0, -8px);
+}
+.downMenu i:hover {
+  transform: translate(0, 8px);
+}
+
+
+
+/********** footer *********/
+.footer {
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #9c9c9c;
+  color: #9c9c9c;
+}
+.footer .company_info {
+  width: 1070px;
+  margin: 0 auto;
+}
+.company_info li {
+  display: inline-block;
+  padding-right: 30px;
+  color: #9c9c9c;
+}
+.company_detail {
+  width: 1070px;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 14px;
+  overflow: hidden;
+}
+.more_detail {
+  float: left;
+  width: 380px;
+  line-height: 30px;
+}
+.more_detail h3 {
+  padding: 10px 0;
+  font-weight: 500;
+}
+.more_detail p {
+  display: inline-block;
+}
+.more_detail a {
+  font-weight: 500;
+  color: #9c9c9c;
+}
+.more_detail .hostNet {
+  padding-top: 10px;
+}
+.centerNum {
+  float: right;
+  line-height: 30px;
+  padding-top: 50px;
+}
+.centerNum p {
+  display: block;
+}
+
+.centerNum p:nth-child(1) {
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+}
+.centerNum p:nth-child(2) {
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
