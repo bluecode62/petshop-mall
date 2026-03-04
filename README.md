@@ -586,8 +586,58 @@ const regexAdress = /[`~!@#$%^&*()_+\=\[\]{};':"\\|,.<>\/?]/;<br />
 주소 선택 후 상세주소 입력란으로 자동 포커스를 이동시켜 사용자 경험을 개선했습니다.<br />
 
 
+<h5>회웝가입 전체 검사</h5>
+<img width="603" height="310" alt="join12" src="https://github.com/user-attachments/assets/597f218c-71d3-4418-a29b-aea58c8e3a58" /><br />
+
+validateId.value = 아이디값,<br />
+validatePw.value = 비밀번호값,<br />
+validatePw02.value = 비밀번호 확인된 비밀번호값,<br />
+validateName.value = 성명값,<br />
+validateEmail.value = 이메일값,<br />
+validatePhone.value = 휴대전화값,<br />
+validateAdress.value = 주소값,<br />
+
+idInput =  아이디 입력창,<br />
+pwInput =  비밀번호 입력창,<br />
+pwchkInput =  비밀번호 확인 입력창,<br />
+nameInput =  이름 입력창,<br />
+emailInput =  이메일 입력창,<br />
+phoneInput =  휴대전화 입력창,<br />
+adressInput =  주소 입력창,<br />
+
+만약 필수 입력창에 값이 없을 경우,<br />
+비어있는 입력창으로 스크롤 이동해,<br />
+확인 안내 메세지와 해당 입력창을 포커스로 표시<br />
+입력창이 하나도 비어있지 않았을 경우에  chkJoin() 함수 실행<br />
+
+<img width="485" height="408" alt="join15" src="https://github.com/user-attachments/assets/c6378ca7-7e8b-4da3-b792-d0ae612de61a" /><br />
+<h5>회원가입란 하단에 취소버튼과 가입하기 버튼에 대한 코드기능</h5>
+
+모든 입력창을 입력하고 가입하기 클릭 시, 다시 가입할지를 재확인하고 "예"를 누르면 "회원가입 완료됐습니다!"라는 메세지 표시와 함께 페이지 새로고침.<br />
+
+만약 취소버튼을 클릭 시, 취소를 할 것인지 재확인하고 "예"를 누르면 "회원가입 취소됐습니다."라는 메세지 표시와 함께 메인 페이지 index.html로 이동.<br />
+
+
+<h5>부가옵션 반려동물 정보</h5>
+<img width="538" height="274" alt="join10" src="https://github.com/user-attachments/assets/6b4805e0-009a-4e1f-ad15-453948cd3d79" /><br />
+
+반려동물 종류와 성별을 부가적으로 받아 나중에 반려동물 개인정보에 맞추어 제품 추천 등의 광고성으로 받는 부가 정보검사.<br />
+
+<img width="480" height="331" alt="join11" src="https://github.com/user-attachments/assets/c791e452-0dc5-4ac5-b1bd-3dea4e926da2" /><br />
+
+반려동물 생년월일 유효성 검사 기능으로,<br />
+생년월일에 맞춰 생일 메세지 및 광고 노출 필요성에 받는 부가 정보검사.<br />
+
 ## 🔧 트러블 슈팅
-문제 상황 + 해결 방법
+처음 상품 리스트 페이지네이션 구현 때,
+아무리 렌더링 코드를 쳐도 렌더링이 되지 않아 html,css,javascript 디버깅하는 도중,
+부모태그인 productBox의 CSS 중에 overflow: hidden 때문에 렌더링이 되지 않는 것을 발견했습니다.
+그래서 수정하니 다행히 페이지네이션이 제대로 나온 것을 확인했습니다.
+그리고 또 다른 문제는 다음 리스트 페이지로 넘어갈 때 안 나오거나 해당 페이지에서 이미지만 늘어가는 오류가 있었습니다.
+display 문제인가 해서 고쳐도 수정이 되지 않다가
+기존 리스트 초기화 (innerHTML = "")가 빠져서 이러한 오류가 생긴 것을 발견했습니다.
+초기화의 중요성과 부모태그의 CSS가 DOM 렌더링에 어떠한 영향을 미치는지 알 수 있는 기회였습니다.
 
 ## 🚀 배포 링크
 GitHub Pages 주소
+-  https://bluecode62.github.io/petshop-mall/
