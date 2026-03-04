@@ -23,7 +23,7 @@
 
 
 
-1. 페이지네이션<br />
+<h1>페이지네이션</h1><br />
 
 
 <img width="500" height="880" alt="Image" src="https://github.com/user-attachments/assets/a85c61a6-0044-4676-836f-99fbe30c852c" /><br />
