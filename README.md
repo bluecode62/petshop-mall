@@ -1,4 +1,6 @@
 # 🐶 펫쇼핑몰 댕냥베베(PC)
+ 
+⭐[모바일 버전 펫쇼핑몰 코드 보기](https://github.com/bluecode62/mobilePetshop)
 
 ## 🛠 사용 기술
 - HTML5
@@ -18,9 +20,6 @@
 3. 수량제한/개수가격
 4. 리뷰&문의 작성
 5. 로그인/회원가입
-
-
-
 
 
 <h1>페이지네이션</h1><br />
@@ -557,26 +556,6 @@ const regexAdress = /[`~!@#$%^&*()_+\=\[\]{};':"\\|,.<>\/?]/;<br />
 
 * 기본 주소는 API로 신뢰성 확보<br />
 * 상세 주소는 직접 입력이므로 별도 유효성 검사 추가<br />
-
-          if (value === "") {<br />
-            detailAdress.style.borderColor = "orange";<br />
-            log.textContent = "상세주소를 입력해주세요";<br />
-            detailAdress.focus();<br />
-            return;<br />
-          }<br />
-
-          if (regexAdress.test(value)) {<br />
-            detailAdress.style.borderColor = "red";<br />
-            log.style.color = "red";<br />
-            log.textContent = "상세 주소에는 특수문자를 사용할 수 없습니다.";<br />
-            return;<br />
-          }<br />
-
-          detailAdress.style.borderColor = "orange";<br />
-          log.style.color = "orange";<br />
-          log.textContent = "주소 확인됐습니다.";<br />
-          return true;<br />
-
 👉 상세 주소 유효성 검사<br />
 
 카카오 우편번호 API를 활용하여 주소 검색 기능을 구현하고, 우편번호 및 기본 주소를 자동 입력하도록 설계했습니다. <br />
@@ -587,6 +566,11 @@ const regexAdress = /[`~!@#$%^&*()_+\=\[\]{};':"\\|,.<>\/?]/;<br />
 <h5>회웝가입 전체 검사</h5>
 <img width="603" height="310" alt="join12" src="https://github.com/user-attachments/assets/597f218c-71d3-4418-a29b-aea58c8e3a58" /><br />
 
+각 입력 항목에서 개별적으로 유효성 검사를 진행했지만,
+회원가입 버튼 클릭 시 모든 필수 항목이 입력되었는지 한 번 더 확인하는
+최종 검증 단계로 구현했습니다.
+
+1차: 각 항목별 실시간 유효성 검사
 validateId.value = 아이디값,<br />
 validatePw.value = 비밀번호값,<br />
 validatePw02.value = 비밀번호 확인된 비밀번호값,<br />
@@ -595,6 +579,7 @@ validateEmail.value = 이메일값,<br />
 validatePhone.value = 휴대전화값,<br />
 validateAdress.value = 주소값,<br />
 
+2차: 가입 버튼 클릭 시 전체 입력 여부 최종 확인
 idInput =  아이디 입력창,<br />
 pwInput =  비밀번호 입력창,<br />
 pwchkInput =  비밀번호 확인 입력창,<br />
@@ -603,10 +588,14 @@ emailInput =  이메일 입력창,<br />
 phoneInput =  휴대전화 입력창,<br />
 adressInput =  주소 입력창,<br />
 
-만약 필수 입력창에 값이 없을 경우,<br />
-비어있는 입력창으로 스크롤 이동해,<br />
+* 항목 누락 시 처리
+
+alert로 안내<br />
+해당 input으로 포커스 이동<br />
+scrollIntoView()를 통해 화면 중앙으로 부드럽게 이동<br />
+return으로 가입 중단<br />
 확인 안내 메세지와 해당 입력창을 포커스로 표시<br />
-입력창이 하나도 비어있지 않았을 경우에  chkJoin() 함수 실행<br />
+입력창이 하나도 비어있지 않았을 경우에 chkJoin() 함수 실행<br />
 
 <img width="485" height="408" alt="join15" src="https://github.com/user-attachments/assets/c6378ca7-7e8b-4da3-b792-d0ae612de61a" /><br />
 <h5>회원가입란 하단에 취소버튼과 가입하기 버튼에 대한 코드기능</h5>
@@ -615,27 +604,53 @@ adressInput =  주소 입력창,<br />
 
 만약 취소버튼을 클릭 시, 취소를 할 것인지 재확인하고 "예"를 누르면 "회원가입 취소됐습니다."라는 메세지 표시와 함께 메인 페이지 index.html로 이동.<br />
 
+회원가입 버튼 클릭 시 모든 필수 입력값이 작성되었는지 최종적으로 검증하도록 구현했습니다.<br />
+각 항목이 비어 있을 경우 해당 입력란으로 포커스를 이동시키고 scrollIntoView()를 활용해 화면 중앙으로 이동하도록 하여 사용자 경험을 개선했습니다.<br /> 
+모든 조건을 통과하면 confirm()을 통해 한 번 더 사용자 확인을 거친 뒤 회원가입을 완료하도록 설계했습니다.<br />
 
-<h5>부가옵션 반려동물 정보</h5>
+<h5>반려동물 종류 및 성별 선택</h5>
 <img width="538" height="274" alt="join10" src="https://github.com/user-attachments/assets/6b4805e0-009a-4e1f-ad15-453948cd3d79" /><br />
 
-반려동물 종류와 성별을 부가적으로 받아 나중에 반려동물 개인정보에 맞추어 제품 추천 등의 광고성으로 받는 부가 정보검사.<br />
+여러 버튼 중 한 개만 선택 가능하도록 구현<br />
+선택 시 이전 선택 해제 후 클릭한 버튼 강조(active)<br />
 
+<h5>반려동물 생년월일 유효성 검사</h5>
 <img width="480" height="331" alt="join11" src="https://github.com/user-attachments/assets/c791e452-0dc5-4ac5-b1bd-3dea4e926da2" /><br />
 
-반려동물 생년월일 유효성 검사 기능으로,<br />
-생년월일에 맞춰 생일 메세지 및 광고 노출 필요성에 받는 부가 정보검사.<br />
+숫자 8자리인지 체크 (YYYYMMDD 형식)<br />
+잘못 입력 시 빨간색 경고 + 포커스 이동<br />
+올바른 입력 시 오렌지색으로 안내<br />
+
+회원가입에서 선택 사항인 반려동물 정보와 생년월일 입력 기능을 구현했습니다.<br />
+버튼 선택 시 UI 강조를 통해 선택 상태를 명확히 표시하고, 생년월일 입력은 숫자 8자리 형식 검증을 적용하여 데이터 정확성을 확보했습니다.<br />
+필수 입력은 아니지만, 부가정보를 처리하는 기능 구현 경험을 보여주기 위해 포함했습니다.<br />
 
 ## 🔧 트러블 슈팅
-처음 상품 리스트 페이지네이션 구현 때,
-아무리 렌더링 코드를 쳐도 렌더링이 되지 않아 html,css,javascript 디버깅하는 도중,
-부모태그인 productBox의 CSS 중에 overflow: hidden 때문에 렌더링이 되지 않는 것을 발견했습니다.
-그래서 수정하니 다행히 페이지네이션이 제대로 나온 것을 확인했습니다.
-그리고 또 다른 문제는 다음 리스트 페이지로 넘어갈 때 안 나오거나 해당 페이지에서 이미지만 늘어가는 오류가 있었습니다.
-display 문제인가 해서 고쳐도 수정이 되지 않다가
-기존 리스트 초기화 (innerHTML = "")가 빠져서 이러한 오류가 생긴 것을 발견했습니다.
-초기화의 중요성과 부모태그의 CSS가 DOM 렌더링에 어떠한 영향을 미치는지 알 수 있는 기회였습니다.
+1️⃣ 페이지네이션이 렌더링되지 않던 문제
 
-## 🚀 배포 링크
+상품 리스트 페이지네이션을 구현하는 과정에서,
+렌더링 함수가 정상적으로 실행됨에도 화면에 리스트가 표시되지 않는 문제가 발생했습니다.
+처음에는 JavaScript 로직 문제로 생각해 콘솔 로그와 디버깅을 반복했으나,
+원인은 부모 태그(productBox)의 CSS에 설정된 overflow: hidden 속성이었습니다.
+해당 속성으로 인해 내부 요소가 정상적으로 표시되지 않았고,
+CSS를 수정한 후 페이지네이션이 정상적으로 렌더링되는 것을 확인했습니다.
+
+👉 배운 점
+DOM 렌더링 문제는 JavaScript뿐만 아니라 CSS 레이아웃 속성의 영향도 함께 고려해야 한다는 점을 알게 되었습니다.
+
+2️⃣ 페이지 이동 시 리스트가 누적되는 문제
+
+다음 페이지로 이동할 때
+상품이 교체되지 않고 기존 리스트 아래에 계속 추가되는 문제가 발생했습니다.
+원인은 렌더링 전 기존 리스트를 초기화하는 코드
+innerHTML = ""가 누락된 것이었습니다.
+초기화 로직을 추가한 후,
+페이지 이동 시 항상 새로운 리스트만 표시되도록 수정했습니다.
+
+👉 배운 점
+동적 렌더링에서는 기존 DOM 정리(초기화)가 중요하다는 것을 체감했습니다.
+
 GitHub Pages 주소
 -  https://bluecode62.github.io/petshop-mall/
+
+⭐[모바일 버전 펫쇼핑몰 코드 보기](https://github.com/bluecode62/mobilePetshop)
