@@ -130,6 +130,8 @@ currentPage 상태값을 받은 값인 page로 업데이트<br />
 
 필터 선택 시 현재 선택된 옵션을 화면에 표시하도록 updateFilterLabel() 함수를 구현해 UX를 개선했습니다.<br />
 
+
+
 <h1>수량제한/개수가격</h1><br />
 
 <img width="523" height="387" alt="Image" src="https://github.com/user-attachments/assets/31e7ee1b-2035-4ee2-a08f-01ebcf65e346" /><br />
@@ -141,6 +143,16 @@ currentPage 상태값을 받은 값인 page로 업데이트<br />
 
 UX 관점에서 선택 불가 옵션 알림 + 화면 표시를 동시에 구현하여<br />
 사용자가 현재 선택 상태를 바로 확인하도록 설계했습니다.
+
+<img width="598" height="687" alt="Image" src="https://github.com/user-attachments/assets/33be0f64-f606-445e-8351-f9623bca5370" /><br />
+<h5>수량 제한 및 가격 계산</h5>
+
+수량 버튼(+ / -) 클릭 시 cnt 변수 업데이트<br />
+최소 수량 1개, 최대 수량 10개로 제한 후 알림 표시<br />
+수량 변경 시, 개별 상품 금액과 총 금액을 동시에 계산하여 화면에 표시<br />
+
+색상·사이즈 선택 시 품절 옵션을 제한하고, 수량 변경에 따라 가격이 실시간으로 업데이트되도록 구현했습니다.<br />
+최소/최대 수량 제한, 선택한 옵션 표시 등 UX를 고려한 쇼핑몰 핵심 기능을 경험했습니다.
 
 
 ## 🔧 트러블 슈팅
