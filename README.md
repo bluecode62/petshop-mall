@@ -21,7 +21,8 @@
 
 
 1. 페이지네이션
-<img width="500" height="500" alt="Image" src="https://github.com/user-attachments/assets/a85c61a6-0044-4676-836f-99fbe30c852c" />
+<img width="500" height="880" alt="Image" src="https://github.com/user-attachments/assets/a85c61a6-0044-4676-836f-99fbe30c852c" /><br />
+
 상품 리스트는 data.js에서 관리하며,
 추후 필터링·정렬 기능 확장을 고려한 구조로 설계했습니다.
 
