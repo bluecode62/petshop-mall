@@ -8,6 +8,7 @@
 - JavaScript
 - Jquery
 - Slick
+- Bxslider
 
 ## 📂 페이지 구성
 - 메인 페이지
