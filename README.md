@@ -20,8 +20,14 @@
 5. 리뷰&문의 작성
 
 
+
+
+
 1. 페이지네이션
+
+
 <img width="500" height="880" alt="Image" src="https://github.com/user-attachments/assets/a85c61a6-0044-4676-836f-99fbe30c852c" /><br />
+<img width="552" height="172" alt="Image" src="https://github.com/user-attachments/assets/9c94d4e7-3400-43f2-ab12-b4a26a94aa83" /><br />
 
 상품 리스트는 data.js에서 관리하며,
 추후 필터링·정렬 기능 확장을 고려한 구조로 설계했습니다.
@@ -50,7 +56,6 @@ currentPage
 정렬, 필터, 검색 기능이 추가되더라도
 데이터 무결성을 유지할 수 있도록 설계했습니다.
 
-<img width="552" height="172" alt="Image" src="https://github.com/user-attachments/assets/9c94d4e7-3400-43f2-ab12-b4a26a94aa83" />
 
 
 
