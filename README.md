@@ -74,13 +74,13 @@ ul위주로 각 페이지 마다 요소 동적 생성
 <img width="452" height="176" alt="Image" src="https://github.com/user-attachments/assets/aed2b94c-2bff-4767-98fb-ff61402ab49e" /><br />
 <h5>페이지 변경 로직 함수</h5>
 
-changePage 함수는 페이지 이동 시 현재 페이지 상태를 변경하고,
-해당 페이지에 맞는 데이터 구간만 추출하여 렌더링하는 역할
-currentPage 상태값을 받은 값인 page로 업데이트
-배열 인덱스가 0부터 시작하는 점을 고려해 (page - 1) * itemsPerPage로 시작 인덱스 계산
-다음 페이지로 변경할 때마다 15개씩 렌더링하는 식으로 설정
-15개씩 시작하는 start와 15개까지임을 끝내는 end를 slice()를 활용해 필요한 구간의 데이터만 추출
-추출된 데이터를 renderList()에 전달하여 렌더링하는 식으로 페이지 변경 시 항상 동일한 개수(15개)의 상품이 노출되도록 설계했습니다.
+changePage 함수는 페이지 이동 시 현재 페이지 상태를 변경하고,<br />
+해당 페이지에 맞는 데이터 구간만 추출하여 렌더링하는 역할<br />
+currentPage 상태값을 받은 값인 page로 업데이트<br />
+배열 인덱스가 0부터 시작하는 점을 고려해 (page - 1) * itemsPerPage로 시작 인덱스 계산<br />
+다음 페이지로 변경할 때마다 15개씩 렌더링하는 식으로 설정<br />
+15개씩 시작하는 start와 15개까지임을 끝내는 end를 slice()를 활용해 필요한 구간의 데이터만 추출<br />
+추출된 데이터를 renderList()에 전달하여 렌더링하는 식으로 페이지 변경 시 항상 동일한 개수(15개)의 상품이 노출되도록 설계했습니다.<br />
 
 <img width="344" height="200" alt="Image" src="https://github.com/user-attachments/assets/64c071be-7996-43a3-bd35-f0156ddd0a34" /><br />
 <h5>초기 페이지 렌더링</h5>
@@ -100,8 +100,8 @@ currentPage 상태값을 받은 값인 page로 업데이트
 페이지 이동 방식이 변경되더라도 changePage 함수만 재사용 가능하도록 설계했고,
 페이지 이동 로직을 하나의 함수로 모아 유지보수성과 확장성을 고려했습니다.
 
-
-
+<img width="539" height="562" alt="Image" src="https://github.com/user-attachments/assets/c91a892e-ab01-4011-b4c6-ec34d656d269" />
+<h5>필터링 기능 구현</h5>
 
 
 ## 🔧 트러블 슈팅
