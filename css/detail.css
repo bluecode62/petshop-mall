@@ -204,7 +204,7 @@ body {
 }
 .product_shopping_info select {
   appearance: none;
-  background: url("./images/arrow_down.png") no-repeat;
+  background: url("../images/arrow_down.png") no-repeat;
   background-position: 96% center;
   width: 100%;
   padding: 15px;
@@ -489,7 +489,7 @@ body {
   -moz-appearance: none;
   cursor: pointer;
   color: #303030;
-  background-image: url("./images/arrow_down.png");
+  background-image: url("../images/arrow_down.png");
   background-repeat: no-repeat;
   background-position: 90% center;
   background-size: 20px;
