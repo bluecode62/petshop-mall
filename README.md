@@ -1,6 +1,6 @@
 # 🐶 펫쇼핑몰 댕냥베베(PC)
  
-<a href="https://github.com/bluecode62/mobilePetshop" target="_blank">⭐[모바일 버전 펫쇼핑몰 코드 보기]</a>
+<a href="https://github.com/bluecode62/mobilePetshop" target="_blank" rel="noopener noreferrer">⭐[모바일 버전 펫쇼핑몰 코드 보기]</a>
 
 ## 🛠 사용 기술
 - HTML5
