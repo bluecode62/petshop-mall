@@ -101,7 +101,7 @@ currentPage 상태값을 받은 값인 page로 업데이트<br />
 페이지 이동 로직을 하나의 함수로 모아 유지보수성과 확장성을 고려했습니다.
 
 <img width="539" height="562" alt="Image" src="https://github.com/user-attachments/assets/c91a892e-ab01-4011-b4c6-ec34d656d269" />><br />
-<h5>필터링 기능 구현</h5>
+<h5>필터링 기능 구현(1)</h5>
 
 상품 리스트를 가격순,리뷰순,별점순, 기간순, 사이즈 등 조건별로 필터링할 수 있도록 구현한 로직
 각 필터 버튼(.filter-toggle, .btnSize) 클릭 시 필터 목록을 열거나 닫음
@@ -112,7 +112,7 @@ currentPage 상태값을 받은 값인 page로 업데이트<br />
 
 
 <img width="595" height="462" alt="Image" src="https://github.com/user-attachments/assets/b5600b15-4127-4941-9b17-c8e376a285cd" />><br />
-<h5>필터링 기능 구현</h5>
+<h5>필터링 기능 구현(2)</h5>
 
 원본 데이터를 복사하여(filteredHanes = [...originHanes])
 정렬이나 필터링 시 데이터 무결성을 유지
@@ -122,7 +122,10 @@ currentPage 상태값을 받은 값인 page로 업데이트<br />
 
 데이터 처리 로직과 UI 렌더링을 분리하여 필터, 정렬, 페이지네이션 기능이 서로 영향을 최소화하도록 설계했습니다.
 
+<img width="565" height="155" alt="Image" src="https://github.com/user-attachments/assets/18f005a2-46b4-475b-b91a-2eaa157a724e" />
+<h5>필터명 변경</h5>
 
+필터 선택 시 현재 선택된 옵션을 화면에 표시하도록 updateFilterLabel() 함수를 구현해 UX를 개선했습니다.
 
 ## 🔧 트러블 슈팅
 문제 상황 + 해결 방법
