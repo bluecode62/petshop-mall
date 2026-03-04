@@ -492,7 +492,6 @@ body {
   background-image: url("../images/arrow_down.png");
   background-repeat: no-repeat;
   background-position: 90% center;
-  background-size: 20px;
   z-index: 10;
 }
 .reviews_write_rate_box ul {
