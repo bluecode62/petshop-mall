@@ -100,8 +100,29 @@ currentPage 상태값을 받은 값인 page로 업데이트<br />
 페이지 이동 방식이 변경되더라도 changePage 함수만 재사용 가능하도록 설계했고,
 페이지 이동 로직을 하나의 함수로 모아 유지보수성과 확장성을 고려했습니다.
 
-<img width="539" height="562" alt="Image" src="https://github.com/user-attachments/assets/c91a892e-ab01-4011-b4c6-ec34d656d269" />
+<img width="539" height="562" alt="Image" src="https://github.com/user-attachments/assets/c91a892e-ab01-4011-b4c6-ec34d656d269" />><br />
 <h5>필터링 기능 구현</h5>
+
+상품 리스트를 가격순,리뷰순,별점순, 기간순, 사이즈 등 조건별로 필터링할 수 있도록 구현한 로직
+각 필터 버튼(.filter-toggle, .btnSize) 클릭 시 필터 목록을 열거나 닫음
+목록 내 항목 클릭 시 선택한 옵션(data-sort)에 따라 정렬 또는 필터 적용
+선택 후에는 필터 라벨을 업데이트하고 목록을 자동으로 닫아 UX를 개선
+
+두 개 이상의 필터 그룹을 동일한 구조로 구현하여 재사용성을 높였습니다.
+
+
+<img width="595" height="462" alt="Image" src="https://github.com/user-attachments/assets/b5600b15-4127-4941-9b17-c8e376a285cd" />><br />
+<h5>필터링 기능 구현</h5>
+
+원본 데이터를 복사하여(filteredHanes = [...originHanes])
+정렬이나 필터링 시 데이터 무결성을 유지
+가격, 날짜, 평점, 리뷰 등 기준에 따라 배열을 정렬
+사이즈 필터(big, sm)는 조건에 맞는 항목만 남기도록 필터링
+필터/정렬 적용 후에는 항상 첫 페이지(changePage(1))를 렌더링
+
+핵심 포인트: 데이터 처리 로직과 UI 렌더링을 분리하여
+필터, 정렬, 페이지네이션 기능이 서로 영향을 최소화하도록 설계했습니다.
+
 
 
 ## 🔧 트러블 슈팅
