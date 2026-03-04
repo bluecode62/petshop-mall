@@ -355,7 +355,7 @@ userPw.value === pwChk.value (비밀번호와 재입력 값 동일)<br />
 <h5>이름 유효성 검사</h5>
 <img width="612" height="400" alt="join06" src="https://github.com/user-attachments/assets/576546fc-9b06-4373-a25e-317bb43a5a7d" /><br /> 
 
-/^[a-zA-Z가-힣]+( [a-zA-Z가-힣]+)*$/<br /> 
+/^[a-zA-Z가-힣]+( [a-zA-Z가-힣]+)*$/ 
 정규식 해설
 ---------------------------------------------------
 [a-zA-Z가-힣]+ → 영문 대소문자 또는 한글을 1자 이상 허용<br /> 
