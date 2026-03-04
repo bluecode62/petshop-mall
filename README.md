@@ -53,9 +53,10 @@
 → 현재 페이지 상태
 
 원본 데이터를 직접 수정하지 않고 복사본을 관리함으로써
-정렬, 필터, 검색 기능이 추가되더라도
+정렬, 필터 기능이 추가되더라도
 데이터 무결성을 유지할 수 있도록 설계했습니다.<br />
-
+현재는 innerHTML += 방식으로 구현했지만,
+성능 개선을 위해 DocumentFragment 방식으로 리팩토링 가능합니다.
 
 <img width="584" height="1076" alt="Image" src="https://github.com/user-attachments/assets/16341cab-c83a-4ab3-9bd9-69ec19f23ad6" /><br />
 <h5>상품 리스트 렌더링 함수</h5>
@@ -67,9 +68,16 @@ ul위주로 각 페이지 마다 요소 동적 생성
 전달받은 배열을 순회하며 상품 카드이미지 생성
 최종적으로 부모태그인 productBox에 append로 추가
 
-렌더링 로직과 데이터 로직을 분리하여
-페이지네이션, 필터링과 독립적으로 동작하도록 설계했습니다.
+데이터 처리 로직과 UI 렌더링 로직을 분리하여
+기능 확장 시 유지보수성을 고려한 구조로 설계했습니다.
 
+<img width="452" height="176" alt="Image" src="https://github.com/user-attachments/assets/aed2b94c-2bff-4767-98fb-ff61402ab49e" /><br />
+<h5>페이지 변경 로직 함수</h5>
+
+currentPage 상태값 업데이트
+(page - 1) * itemsPerPage를 통해 시작 인덱스 계산
+slice()를 활용해 필요한 구간의 데이터만 추출
+렌더링 함수와 분리하여 역할을 명확히 구분
 
 
 ## 🔧 트러블 슈팅
