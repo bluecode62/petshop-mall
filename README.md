@@ -34,22 +34,22 @@
 
 페이지네이션 구현을 위해 다음 상태값을 정의했습니다.
 
-indicators : 페이지 이동 버튼 요소
+<b>indicators</b> : 페이지 이동 버튼 요소
 
-productBox : 상품 리스트 렌더링 영역
+<b>productBox</b> : 상품 리스트 렌더링 영역
 
-itemsPerPage : 한 페이지당 노출 상품 수 (15개)
+<b>itemsPerPage</b> : 한 페이지당 노출 상품 수 (15개)
 
-currentPage : 현재 페이지 상태값 (초기값 1)
+<b>currentPage</b> : 현재 페이지 상태값 (초기값 1)
 
 📌 데이터 관리
-originHanes
+<b>originHanes</b>
 → 원본 데이터(리스트 상품) 보존
 
-filteredHanes
+<b>filteredHanes</b>
 → 필터링/정렬/검색 후 변경되는 데이터 관리
 
-currentPage
+<b>currentPage</b>
 → 현재 페이지 상태
 
 원본 데이터를 직접 수정하지 않고 복사본을 관리함으로써
