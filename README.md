@@ -228,7 +228,7 @@ logOk → 로그인 성공 여부 상태 관리<br />
 테스트용 계정, 입력 검증, UI 요소 참조, 상태 관리를 미리 선언하여<br />
 로그인 로직에서 각각의 역할을 명확하게 구분하고 유지보수성을 높였습니다.
 
-<img width="471" height="744" alt="login02" src="https://github.com/user-attachments/assets/750d2944-7b8e-481c-97c9-0e3dbae31bee" /><br />
+<img width="471" height="647" alt="login02" src="https://github.com/user-attachments/assets/a793a522-0755-404f-ba6a-b7cf11a43080" /><br />
 
 입력한 아이디와 비밀번호를 확인하여 로그인 처리<br />
 아이디/비밀번호 일치 시 → 환영 알림 표시, 로그인 상태(logOk) 업데이트<br />
