@@ -676,7 +676,6 @@ innerHTML = ""가 누락된 것이었습니다.
 👉 배운 점
 동적 렌더링에서는 기존 DOM 정리(초기화)가 중요하다는 것을 체감했습니다.
 
-GitHub Pages 주소
--  https://bluecode62.github.io/petshop-mall/
+📍 GitHub Pages 주소: https://bluecode62.github.io/petshop-mall/
 
 ⭐[모바일 버전 펫쇼핑몰 코드 보기](https://github.com/bluecode62/mobilePetshop)
