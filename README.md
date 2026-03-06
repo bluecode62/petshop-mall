@@ -1,5 +1,7 @@
 # 🐶 펫쇼핑몰 댕냥베베(PC)
- 
+: 반려동물 전문 쇼핑몰 PC 버전으로, 상품 리스트 필터링, 페이지네이션, 상세 페이지 수량·가격 계산, 리뷰·문의 작성, 로그인/회원가입 기능 등 주요 쇼핑몰 기능을 구현했습니다.
+HTML, CSS, JavaScript와 jQuery, Slick/BxSlider를 활용하여 설계했습니다.
+
 ⭐<a href="https://github.com/bluecode62/mobilePetshop" target="_blank">[모바일 버전 펫쇼핑몰 코드 보기]</a>
 
 ## 🛠 사용 기술
@@ -7,8 +9,7 @@
 - CSS3
 - JavaScript
 - Jquery
-- Slick
-- Bxslider
+- Slick Slider / BxSlider
 
 ## 📂 페이지 구성
 - 메인 페이지 (index.html)
