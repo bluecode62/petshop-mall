@@ -137,7 +137,8 @@ currentPage 상태값을 받은 값인 page로 업데이트<br />
 
 
 <h1>수량제한/개수가격</h1><br />
-
+<img width="1069" height="850" alt="수량제한" src="https://github.com/user-attachments/assets/96d2d86c-0dd4-4cae-8466-53b45e09cf87" />
+<img width="541" height="311" alt="수량제한03" src="https://github.com/user-attachments/assets/780db39e-d657-4766-ab54-5227fbff548e" />
 <img width="523" height="387" alt="Image" src="https://github.com/user-attachments/assets/31e7ee1b-2035-4ee2-a08f-01ebcf65e346" /><br />
 <h5>색상/사이즈 선택 제한</h5>
 
