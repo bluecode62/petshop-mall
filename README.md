@@ -147,8 +147,10 @@ currentPage 상태값을 받은 값인 page로 업데이트<br />
 선택한 옵션은 .colorSize 영역에 “색상:XX / 사이즈:XX” 형식으로 표시<br />
 
 UX 관점에서 선택 불가 옵션 알림 + 화면 표시를 동시에 구현하여<br />
-사용자가 현재 선택 상태를 바로 확인하도록 설계했습니다.
+사용자가 현재 선택 상태를 바로 확인하도록 설계했습니다.<br />
 
+<img width="1073" height="854" alt="수량제한02" src="https://github.com/user-attachments/assets/1625b992-c388-4aad-bf2f-5caa7f31745a" />
+<img width="460" height="196" alt="수량제한04" src="https://github.com/user-attachments/assets/b47316f3-d9dd-4705-b1f6-e6d1180748eb" />
 <img width="598" height="687" alt="Image" src="https://github.com/user-attachments/assets/33be0f64-f606-445e-8351-f9623bca5370" /><br />
 <h5>수량 제한 및 가격 계산</h5>
 
