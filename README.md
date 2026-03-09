@@ -278,15 +278,19 @@ logOk → 로그인 성공 여부 상태 관리<br />
 <img width="575" height="548" alt="로그인04" src="https://github.com/user-attachments/assets/548a633b-24cd-47d9-8219-6070426462f5" /><br />
 
 <img width="561" height="545" alt="로그인05" src="https://github.com/user-attachments/assets/a3830cc5-ab13-4cfe-b7c4-3f3164b459a6" /><br />
+<img width="568" height="562" alt="로그인01" src="https://github.com/user-attachments/assets/7916e1a4-3369-4188-890d-e7ef34915845" />
+
+<img width="561" height="545" alt="로그인05" src="https://github.com/user-attachments/assets/a3846c56-c766-4848-a63e-c556506281d7" /><br />
 
 <img width="471" height="647" alt="login02" src="https://github.com/user-attachments/assets/a793a522-0755-404f-ba6a-b7cf11a43080" /><br />
-<img width="568" height="562" alt="로그인01" src="https://github.com/user-attachments/assets/7916e1a4-3369-4188-890d-e7ef34915845" />
+
 
 입력한 아이디와 비밀번호를 확인하여 로그인 처리<br />
 아이디/비밀번호 일치 시 → 환영 알림 표시, 로그인 상태(logOk) 업데이트<br />
-비밀번호만 틀릴 경우 → 오류 안내 메시지 표시, 재입력 유도<br /><br />
+비밀번호만 틀릴 경우 → 오류 안내 메시지 표시, 재입력 유도 <br />
 아이디 또는 비밀번호 미작성 시 → 입력을 요청하는 안내 표시<br /><br />
 존재하지 않는 아이디 입력 시 → 오류 메시지 표시 및 로그인 횟수 차감<br />
+특수문자기호 입력 시 → 오류 안내 메시지 표시, 재입력 유도<br />
 입력값 검증과 알림 표시를 통해 직관적이고 안전한 로그인 흐름을 제공<br />
 
 <img width="560" height="563" alt="로그인07" src="https://github.com/user-attachments/assets/19c7b48c-c714-4be4-a784-75d308854de9" />
