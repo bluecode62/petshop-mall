@@ -429,6 +429,9 @@ userPw.value === pwChk.value (비밀번호와 재입력 값 동일)<br />
 일치 시에는 성공 메시지와 스타일 변화를 통해 명확한 피드백을 제공했습니다.<br /> 
 
 <h5>이름 유효성 검사</h5>
+<img width="555" height="78" alt="이름01" src="https://github.com/user-attachments/assets/fe587529-e749-4eaf-8af3-63a2bfaee137" />
+<img width="557" height="87" alt="이름02" src="https://github.com/user-attachments/assets/0a02121a-9477-4b5a-9dec-4d568ce522e9" /><br /> 
+
 <img width="612" height="400" alt="join06" src="https://github.com/user-attachments/assets/576546fc-9b06-4373-a25e-317bb43a5a7d" /><br /> 
 
 `/^[a-zA-Z가-힣]+( [a-zA-Z가-힣]+)*$/ `
