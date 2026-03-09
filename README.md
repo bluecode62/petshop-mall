@@ -399,6 +399,10 @@ chk02 = true로 상태값 업데이트<br />
 
 
 <h5>비밀번호 재확인(일치 여부) 검사</h5>
+
+<img width="558" height="196" alt="비밀번호 확인01" src="https://github.com/user-attachments/assets/70716544-57d0-4cd9-8265-ecac4be3816c" />
+<img width="545" height="194" alt="비밀번호 확인02" src="https://github.com/user-attachments/assets/3112b7e1-dad3-421e-aed6-ca2183d1f94a" /><br /> 
+
 <img width="553" height="351" alt="join05" src="https://github.com/user-attachments/assets/beb3ecb6-44f4-4a0e-ae9b-6c6e005efb68" /><br /> 
 
 1차 비밀번호 유효성 검사에서 통과한 상태값 chk02를 기반으로<br /> 
