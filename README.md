@@ -105,7 +105,7 @@ currentPage 상태값을 받은 값인 page로 업데이트<br />
 페이지 이동 로직을 하나의 함수로 모아 유지보수성과 확장성을 고려했습니다.<br />
 
 <h1>필터링 정렬 기능</h1><br />
-
+<img width="375" height="554" alt="필터링01" src="https://github.com/user-attachments/assets/ba37b0c3-3daa-4754-9d9a-27cd405605db" />
 <img width="539" height="562" alt="Image" src="https://github.com/user-attachments/assets/c91a892e-ab01-4011-b4c6-ec34d656d269" />><br />
 <h5>필터링 기능 구현(1)</h5>
 
