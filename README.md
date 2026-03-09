@@ -361,6 +361,10 @@ regxId 정규식 활용: 영문 대소문자 시작, 5~10자 영문·숫자·특
 사용 가능 시 오렌지색 테두리와 안내 메시지를 표시하고, 중복일 경우 입력값을 초기화하며 빨간색 테두리와 메시지로 즉각적인 피드백을 제공하여 사용자 경험을 개선했습니다.<br /> 
 
 <h5>비밀번호 유효성 검사</h5>
+
+<img width="549" height="99" alt="비번확인01" src="https://github.com/user-attachments/assets/1e350af8-9981-48cc-b39f-2d384a2ecd44" />
+<img width="550" height="107" alt="비번확인02" src="https://github.com/user-attachments/assets/af4295ff-b4e8-4680-a885-e537c30b8655" />><br /> 
+
 <img width="653" height="363" alt="join04" src="https://github.com/user-attachments/assets/d92a9452-325d-480f-9d5b-a62e8a873379" /><br /> 
 
 /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[!@#$%^&*()])[a-zA-Z\d!@#$%^&*()]{10,15}$/ <br /> 
