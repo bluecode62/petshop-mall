@@ -94,7 +94,6 @@ currentPage 상태값을 받은 값인 page로 업데이트<br />
 첫 번째 페이지가 즉시 렌더링되도록 구성했습니다.<br />
 별도의 조건문 없이도 초기 화면과 페이지 이동 로직을 동일한 흐름으로 처리할 수 있도록 설계했습니다.<br />
 
-<img width="452" height="176" alt="Image" src="https://github.com/user-attachments/assets/aed2b94c-2bff-4767-98fb-ff61402ab49e" /><br />
 <h5>페이지 버튼 이벤트 처리</h5>
 
 각 페이지 버튼에 클릭 이벤트를 등록하여 해당 인덱스를 기반으로 changePage(index + 1)을 호출하도록 구현했습니다.<br />
