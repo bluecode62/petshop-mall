@@ -267,7 +267,15 @@ chkBox → “아이디 저장” 체크박스 DOM 참조<br />
 logOk → 로그인 성공 여부 상태 관리<br />
 
 테스트용 계정, 입력 검증, UI 요소 참조, 상태 관리를 미리 선언하여<br />
-로그인 로직에서 각각의 역할을 명확하게 구분하고 유지보수성을 높였습니다.
+로그인 로직에서 각각의 역할을 명확하게 구분하고 유지보수성을 높였습니다.<br />
+
+<img width="552" height="441" alt="로그인성공01" src="https://github.com/user-attachments/assets/5a29e97b-b2d6-4a40-8196-c402e39cd8ba" />
+<img width="567" height="646" alt="로그인성공02" src="https://github.com/user-attachments/assets/c61a1d21-c562-4dc1-856b-f16267039be1" /><br />
+
+<img width="570" height="554" alt="로그인02" src="https://github.com/user-attachments/assets/401c63ca-b0ad-4875-b552-f445e6365e20" />
+<img width="559" height="450" alt="로그인03" src="https://github.com/user-attachments/assets/60712d7d-110e-4b0e-8feb-87b2854d2c8c" /><br />
+
+
 
 <img width="471" height="647" alt="login02" src="https://github.com/user-attachments/assets/a793a522-0755-404f-ba6a-b7cf11a43080" /><br />
 
@@ -278,11 +286,15 @@ logOk → 로그인 성공 여부 상태 관리<br />
 존재하지 않는 아이디 입력 시 → 오류 메시지 표시 및 로그인 횟수 차감<br />
 입력값 검증과 알림 표시를 통해 직관적이고 안전한 로그인 흐름을 제공<br />
 
-
+<img width="560" height="563" alt="로그인07" src="https://github.com/user-attachments/assets/19c7b48c-c714-4be4-a784-75d308854de9" />
+<img width="548" height="445" alt="로그인08" src="https://github.com/user-attachments/assets/6e53d3c2-8cfe-47e2-ab43-7494e109e179" />
+<img width="563" height="661" alt="로그인09" src="https://github.com/user-attachments/assets/34bfbe13-6041-4aa4-ad9c-c82d18c1b11e" /><br />
 <img width="508" height="351" alt="login02-01" src="https://github.com/user-attachments/assets/ad3c3752-e8d2-40a9-9ef4-aac3bbb732a0" /><br />
 로그인 횟수 다 소진 시 disable로 아이디,비번작성이 비활성화됩니다.<br />
 안내상 30분이지만 빠른 테스트 확인을 위해 3초로 설정했습니다.<br />
 
+
+<img width="556" height="440" alt="로그인06" src="https://github.com/user-attachments/assets/aca51752-101f-4e41-8889-d05364b69d44" />
 <img width="470" height="137" alt="login02-02" src="https://github.com/user-attachments/assets/4fc66edd-1b09-4281-92d1-bae6075a1eb0" /><br />
 아이디 저장박스를 체크하고 로그인하면, 로그인 성공 시 아이디가 화면에 자동으로 표시되도록 구현했습니다.<br />
 비밀번호는 저장하지 않고, 로그인하지 않은 상태에서는 안내 메시지를 통해 사용자에게 알려주도록 설계했습니다.<br />
