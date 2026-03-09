@@ -467,6 +467,9 @@ userName.value.length > 15
 조건을 충족하지 않을 경우 시각적 피드백(테두리 색상 및 안내 문구)을 제공하여 사용자 경험을 개선했습니다.<br />
 
 <h5>이메일 유효성 검사</h5>
+<img width="983" height="162" alt="이메일유효" src="https://github.com/user-attachments/assets/5f398ad0-e54f-45ba-93b4-9c1345f384cf" />
+<img width="998" height="170" alt="이메일유효02" src="https://github.com/user-attachments/assets/d5b4cd21-3808-4a49-93c1-f40be9b148d9" />
+<img width="998" height="152" alt="이메일유효03" src="https://github.com/user-attachments/assets/c2b118b6-8740-4053-a8bd-be4ec519356c" />
 <img width="756" height="827" alt="join07" src="https://github.com/user-attachments/assets/d3e7916a-c1cd-473e-9c43-d8a3d8324b7a" /><br />
 
 mailChk() → 입력값 검증 및 UI 피드백<br />
@@ -513,7 +516,9 @@ $ → 문자열 끝<br />
 
 👉 즉각적인 시각적 피드백 제공<br />
 
+```javascript
 const emailDomainSelect = document.getElementById("email_domain");<br />
+```
 
 = 사용자가 도메인을 직접 선택 가능<br />
 = "direct" 선택 시 → 직접 입력 허용<br />
@@ -529,6 +534,10 @@ ex)  const id = userEmail.value.split("@")[0];<br />
 
 
 <h5>휴대폰 유효성 검사</h5>
+
+<img width="765" height="152" alt="휴대폰유효01" src="https://github.com/user-attachments/assets/f4f9f20b-0efc-4db4-9825-073444dc90f8" />
+<img width="775" height="152" alt="휴대폰유효02" src="https://github.com/user-attachments/assets/df7d97e5-924a-419a-9ab2-6719b0121e78" />
+<img width="765" height="152" alt="휴대폰유효03" src="https://github.com/user-attachments/assets/648ff843-cd83-47c1-a148-fb364433d6f7" />
 <img width="569" height="346" alt="join08" src="https://github.com/user-attachments/assets/51108f40-bab7-447e-a1a0-833ae5b9dfa5" /><br />
 
 /^0\d{8,10}$/<br />
@@ -561,6 +570,9 @@ $ → 문자열 끝<br />
 하이픈(-)을 제외한 숫자만 허용하도록 설계했으며, 형식이 맞지 않을 경우 즉각적인 시각적 피드백과 안내 문구를 제공하여 입력 오류를 최소화하도록 구현했습니다.<br />
 
 <h5>전화번호 유효성 검사</h5>
+
+<img width="765" height="116" alt="전화번호유효01" src="https://github.com/user-attachments/assets/77859883-1c54-42e2-9a80-e30c0fb837a4" />
+<img width="765" height="116" alt="전화번호유효02" src="https://github.com/user-attachments/assets/41b96c85-a0ab-4419-bc93-c64a77d7131e" />
 <img width="643" height="386" alt="join09" src="https://github.com/user-attachments/assets/092ce825-7656-48c9-b019-70471632dfed" /><br />
 
 /^(070|02|0[3-9]{1}[0-9]{1})[0-9]{3,4}[0-9]{4}$/<br />
@@ -604,10 +616,16 @@ $ → 문자열 끝<br />
 검증 로직과 정규식 검사를 별도 함수로 분리하여 코드 가독성과 유지보수성을 고려했습니다.<br />
 
 <h5>주소 유효성 검사</h5>
+
+<img width="1216" height="775" alt="주소01" src="https://github.com/user-attachments/assets/37b478a3-7be3-4040-8b3b-fdd080dbedd0" />
+<img width="1268" height="278" alt="주소02" src="https://github.com/user-attachments/assets/3e0c376b-4485-4ca7-81a4-35158f030f89" />
+<img width="1277" height="290" alt="주소03" src="https://github.com/user-attachments/assets/bda5ae62-48ab-46e9-a75f-d177ac42e757" />
+<img width="1277" height="273" alt="주소04" src="https://github.com/user-attachments/assets/57c18228-e8c5-4033-bac4-36b9af45c336" />
 <img width="745" height="1257" alt="join16-02" src="https://github.com/user-attachments/assets/3708fbe8-c1e1-49ca-b07f-fe10fbfadcbb" /><br />
 
-
+```javascript
 <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script><br />
+```
 👉 외부 API를 활용해 우편번호 + 기본주소 자동 입력 기능을 구현했습니다.<br />
 
 ① 주소 검색 후 자동 입력<br />
@@ -648,6 +666,14 @@ const regexAdress = /[`~!@#$%^&*()_+\=\[\]{};':"\\|,.<>\/?]/;<br />
 
 
 <h5>회웝가입 전체 검사</h5>
+<img width="605" height="186" alt="회원가입검사01" src="https://github.com/user-attachments/assets/edd2db13-7471-4ab6-9957-86944e40054a" />
+<img width="560" height="186" alt="회원가입검사02" src="https://github.com/user-attachments/assets/2f25ab80-2727-48d0-b1a9-36fb2e64b264" />
+<img width="569" height="187" alt="회원가입검사03" src="https://github.com/user-attachments/assets/bc75ad9c-aefd-4918-9b41-2ab02a693151" />
+<img width="570" height="195" alt="회원가입검사04" src="https://github.com/user-attachments/assets/1a1ae6f2-ff53-4927-b423-1787c4c0d4e8" />
+<img width="570" height="191" alt="회원가입검사05" src="https://github.com/user-attachments/assets/d1bd9f37-44cb-4eba-b903-a8edbfb54e3d" />
+<img width="574" height="191" alt="회원가입검사06" src="https://github.com/user-attachments/assets/a5ab2aab-af7f-46d5-a8a9-2d56b81c4fa1" />
+<img width="585" height="192" alt="회원가입검사07" src="https://github.com/user-attachments/assets/4bd3ed4b-8cc3-4c58-aae7-dd7b8e053d3f" />
+
 <img width="603" height="310" alt="join12" src="https://github.com/user-attachments/assets/597f218c-71d3-4418-a29b-aea58c8e3a58" /><br />
 
 각 입력 항목에서 개별적으로 유효성 검사를 진행했지만,
@@ -681,6 +707,11 @@ return으로 가입 중단<br />
 확인 안내 메세지와 해당 입력창을 포커스로 표시<br />
 입력창이 하나도 비어있지 않았을 경우에 chkJoin() 함수 실행<br />
 
+
+<img width="569" height="198" alt="회원가입검사08" src="https://github.com/user-attachments/assets/f1133763-5933-4cd8-a764-3fb4bc9ab586" />
+<img width="575" height="198" alt="회원가입검사09" src="https://github.com/user-attachments/assets/acf52020-d1cf-40ed-9604-93da7869c000" />
+<img width="575" height="198" alt="회원가입검사10" src="https://github.com/user-attachments/assets/18773b97-fdf8-4899-8ac9-b539aadb190b" />
+<img width="1370" height="889" alt="회원가입검사11" src="https://github.com/user-attachments/assets/3eb99639-cd53-47d4-8c67-45936cd3d590" />
 <img width="485" height="408" alt="join15" src="https://github.com/user-attachments/assets/c6378ca7-7e8b-4da3-b792-d0ae612de61a" /><br />
 <h5>회원가입란 하단에 취소버튼과 가입하기 버튼에 대한 코드기능</h5>
 
@@ -691,6 +722,10 @@ return으로 가입 중단<br />
 회원가입 버튼 클릭 시 모든 필수 입력값이 작성되었는지 최종적으로 검증하도록 구현했습니다.<br />
 각 항목이 비어 있을 경우 해당 입력란으로 포커스를 이동시키고 scrollIntoView()를 활용해 화면 중앙으로 이동하도록 하여 사용자 경험을 개선했습니다.<br /> 
 모든 조건을 통과하면 confirm()을 통해 한 번 더 사용자 확인을 거친 뒤 회원가입을 완료하도록 설계했습니다.<br />
+
+
+
+<img width="1277" height="442" alt="부가정보" src="https://github.com/user-attachments/assets/f64bdc13-95b5-4e18-9af8-2eb70ffcc063" /><br />
 
 <h5>반려동물 종류 및 성별 선택</h5>
 <img width="538" height="274" alt="join10" src="https://github.com/user-attachments/assets/6b4805e0-009a-4e1f-ad15-453948cd3d79" /><br />
