@@ -277,8 +277,7 @@ logOk → 로그인 성공 여부 상태 관리<br />
 
 <img width="575" height="548" alt="로그인04" src="https://github.com/user-attachments/assets/548a633b-24cd-47d9-8219-6070426462f5" /><br />
 
-<img width="561" height="545" alt="로그인05" src="https://github.com/user-attachments/assets/a3830cc5-ab13-4cfe-b7c4-3f3164b459a6" /><br />
-<img width="568" height="562" alt="로그인01" src="https://github.com/user-attachments/assets/7916e1a4-3369-4188-890d-e7ef34915845" />
+<img width="568" height="562" alt="로그인01" src="https://github.com/user-attachments/assets/7916e1a4-3369-4188-890d-e7ef34915845" /><br />
 
 <img width="561" height="545" alt="로그인05" src="https://github.com/user-attachments/assets/a3846c56-c766-4848-a63e-c556506281d7" /><br />
 
