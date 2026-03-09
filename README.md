@@ -75,6 +75,7 @@ ul위주로 각 페이지 마다 요소 동적 생성<br />
 데이터 처리 로직과 UI 렌더링 로직을 분리하여<br />
 기능 확장 시 유지보수성을 고려한 구조로 설계했습니다.<br />
 
+<img width="1058" height="582" alt="페이지변경" src="https://github.com/user-attachments/assets/9ad6eb73-0989-4c63-8851-e245bb106523" />
 <img width="452" height="176" alt="Image" src="https://github.com/user-attachments/assets/aed2b94c-2bff-4767-98fb-ff61402ab49e" /><br />
 <h5>페이지 변경 로직 함수</h5>
 
