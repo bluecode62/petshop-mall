@@ -116,7 +116,7 @@ currentPage 상태값을 받은 값인 page로 업데이트<br />
 
 두 개 이상의 필터 그룹을 동일한 구조로 구현하여 재사용성을 높였습니다.<br />
 
-
+<img width="1077" height="562" alt="필터링02" src="https://github.com/user-attachments/assets/acfa6149-5466-4a88-b9b4-9183da7246d0" />
 <img width="595" height="462" alt="Image" src="https://github.com/user-attachments/assets/b5600b15-4127-4941-9b17-c8e376a285cd" />><br />
 <h5>필터링 기능 구현(2)</h5>
 
