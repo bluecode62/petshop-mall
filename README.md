@@ -326,6 +326,9 @@ userId(아이디), userPw(비밀번호), userName(성명), userEmail(이메일),
 상태 변수: chk01(아이디 중복확인), chk02(비밀번호 확인) → 아이디 중복, 비밀번호 2차 확인용<br />
 
 <h5>아이디 유효성 검사</h5>
+<img width="783" height="82" alt="가입01" src="https://github.com/user-attachments/assets/0398d72d-2a1b-4dab-8e9e-f2787010d4e0" />
+<img width="789" height="93" alt="가입02" src="https://github.com/user-attachments/assets/d1da4903-7b59-4607-a133-27ab08f59cfa" /><br />
+
 <img width="501" height="292" alt="join02" src="https://github.com/user-attachments/assets/5665f68f-5c78-483b-ba34-a455ce6537a5" /><br />
 
 regxId 정규식 활용: 영문 대소문자 시작, 5~10자 영문·숫자·특수문자(. _ -) 조합만 허용<br />
@@ -339,6 +342,9 @@ regxId 정규식 활용: 영문 대소문자 시작, 5~10자 영문·숫자·특
 조건을 만족하면 상태 변수를 통해 가입 진행 가능 여부를 관리하도록 설계했습니다.<br />
 
 <h5>아이디 중복 확인 기능</h5>
+
+<img width="789" height="93" alt="가입02" src="https://github.com/user-attachments/assets/f7933233-a599-497e-9dc1-e04697d5ff93" />
+<img width="792" height="94" alt="가입03" src="https://github.com/user-attachments/assets/e960b021-e560-4ecb-a901-e1cf1febd3c1" /><br />
 <img width="594" height="284" alt="join03" src="https://github.com/user-attachments/assets/5480b00c-9ddf-4751-bc70-f324be4799d2" /><br /> 
 
 상태와 값 확인: 아이디 유효성 검사에서 업데이트된 chk01 상태와 입력값을 함께 확인<br /> 
