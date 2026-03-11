@@ -686,7 +686,7 @@ const regexAdress = /[`~!@#$%^&*()_+\=\[\]{};':"\\|,.<>\/?]/;<br />
 회원가입 버튼 클릭 시 모든 필수 항목이 입력되었는지 한 번 더 확인하는
 최종 검증 단계로 구현했습니다.
 
-1차: 각 항목별 실시간 유효성 검사
+1차: 각 항목별 실시간 유효성 검사<br />
 validateId.value = 아이디값,<br />
 validatePw.value = 비밀번호값,<br />
 validatePw02.value = 비밀번호 확인된 비밀번호값,<br />
@@ -695,7 +695,7 @@ validateEmail.value = 이메일값,<br />
 validatePhone.value = 휴대전화값,<br />
 validateAdress.value = 주소값,<br />
 
-2차: 가입 버튼 클릭 시 전체 입력 여부 최종 확인
+2차: 가입 버튼 클릭 시 전체 입력 여부 최종 확인<br />
 idInput =  아이디 입력창,<br />
 pwInput =  비밀번호 입력창,<br />
 pwchkInput =  비밀번호 확인 입력창,<br />
