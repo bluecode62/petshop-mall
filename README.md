@@ -77,6 +77,8 @@ ul위주로 각 페이지 마다 요소 동적 생성<br />
 
 <img width="1058" height="582" alt="페이지변경" src="https://github.com/user-attachments/assets/9ad6eb73-0989-4c63-8851-e245bb106523" />
 <img width="452" height="176" alt="Image" src="https://github.com/user-attachments/assets/aed2b94c-2bff-4767-98fb-ff61402ab49e" /><br />
+<img width="240" height="42" alt="페이지변경수" src="https://github.com/user-attachments/assets/4543a2a5-349f-4bb2-a6ab-d72a40e4726d" /><br />
+
 <h5>페이지 변경 로직 함수</h5>
 
 changePage 함수는 페이지 이동 시 현재 페이지 상태를 변경하고,<br />
